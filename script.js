@@ -27,7 +27,6 @@ mainTitle.addEventListener("input", () => {
   localStorage.setItem("dashTitle", mainTitle.innerText);
 });
 
-
 // --------------------
 // Quick links
 const linkList = document.getElementById("link-list");
@@ -172,7 +171,7 @@ notes.addEventListener("input", () => {
   localStorage.setItem("myNotes", notes.value);
 });
 
-
+// ---------------------
 // Change background image
 const bgBtn = document.getElementById("change-bg-btn");
 
