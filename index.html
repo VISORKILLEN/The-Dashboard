@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Dashboard</title>
+    <link rel="stylesheet" href="../CSS-Dashboard/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="top-bar">
+      <div id="clock-widget">
+        <span id="time"></span>
+        <span id="date"></span>
+      </div>
+    </div>
+
+    <h1 id="main-title" contenteditable="true" spellcheck="false">
+      John Doe Dashboard
+    </h1>
+
+    <main class="container">
+      <section class="card">
+        <h2>Snabblänkar</h2>
+        <div id="link-list"></div>
+        <button id="add-link-btn" class="add-btn">Lägg till länk</button>
+      </section>
+
+      <section class="card">
+        <h2>Dagens väder</h2>
+        <div id="weather-display">Laddar väder...</div>
+      </section>
+
+      <section class="card">
+        <h2>Konstig fakta</h2>
+        <div id="api-data-container"></div>
+      </section>
+
+      <section class="card">
+        <h2>Anteckningar</h2>
+        <textarea
+          id="notes"
+          placeholder="Skriv dina anteckningar här..."
+        ></textarea>
+      </section>
+    </main>
+
+    <button id="change-bg-btn">Slumpa ny bakgrund</button>
+  </body>
+</html>
