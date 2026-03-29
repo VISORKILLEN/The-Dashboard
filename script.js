@@ -105,7 +105,7 @@ navigator.geolocation.getCurrentPosition(
 
         for (let i = 0; i < 3; i++) {
           const temp = Math.round(daily.temperature_2m_max[i]);
-          const code = daily.weather.code[i];
+          const code = daily.weather_code[i];
           const weather = weatherConfig[code] || weatherConfig.default;
 
           // Date logic
