@@ -78,7 +78,7 @@ window.deleteLink = (i) => {
 renderLinks();
 
 // ----------------------
-// wether code
+// Weather code to check today and next coming 2 days
 const weatherConfig = {
   0: { text: "Sol", icon: "☀️" },
   1: { text: "Klart", icon: "🌤️" },
@@ -88,7 +88,6 @@ const weatherConfig = {
   63: { text: "Regn", icon: "🌧️" },
   71: { text: "Snö", icon: "❄️" },
   73: { text: "Snö", icon: "❄️" },
-  // Default fallback
   default: { text: "Varierande", icon: "🌦️" },
 };
 
@@ -106,7 +105,7 @@ navigator.geolocation.getCurrentPosition(
 
         for (let i = 0; i < 3; i++) {
           const temp = Math.round(daily.temperature_2m_max[i]);
-          const code = daily.weather_code[i];
+          const code = daily.weather.code[i];
           const weather = weatherConfig[code] || weatherConfig.default;
 
           // Date logic
